@@ -1,23 +1,46 @@
-# Reverse Array
+# Second Largest Element in an Array
 
-## Problem Statement
+##  Problem Statement
 
-Given an integer array, reverse the array in-place.
+Given an array of integers, find the second largest distinct element in the array.
 
-The reversal should be done without using extra space.
+If the second largest element does not exist, return -1.
 
 ---
 
-##  Example
+##  Example 1
 
 Input:
-[1, 2, 3, 4, 5]
+[12, 35, 1, 10, 34, 1]
 
 Output:
-[5, 4, 3, 2, 1]
+34
+
+Explanation:
+The largest element is 35 and the second largest distinct element is 34.
 
 ---
 
-##  Objective
+## Example 2
 
-Solve the problem in O(n) time and O(1) space.
+Input:
+[10, 10, 10]
+
+Output:
+-1
+
+Explanation:
+There is no second largest distinct element.
+
+---
+
+## Constraints
+
+- 1 ≤ array.length ≤ 10^5  
+- -10^9 ≤ array[i] ≤ 10^9  
+
+---
+
+## Objective
+
+Solve the problem efficiently in O(n) time complexity.
