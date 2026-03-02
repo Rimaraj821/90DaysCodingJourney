@@ -4,13 +4,18 @@ class Solution {
         int sum = 0;
         int starting_index =-1;
         int last_index = -1;
-        for(int i =0;i<n;i++){
-            for(int j = i+1;j<n;j++){
-                sum = numbers[i] +numbers[j];
-                if(sum == target){
-                    return new int[]{i+1,j+1};
-                }
-
+        int left =0;
+        int right = n-1;
+        while(left<right){
+            sum= numbers[left]+numbers[right];
+            if(sum== target){
+                return new int[]{left+1,right+1};
+            }
+            else if(sum<target){
+                left++;
+            }
+            else{
+                right--;
             }
             
         }
