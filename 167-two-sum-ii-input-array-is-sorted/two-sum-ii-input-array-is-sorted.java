@@ -1,26 +1,19 @@
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
+       
         int n = numbers.length;
-        int sum = 0;
-        int starting_index =-1;
-        int last_index = -1;
+        int sum =0;
         int left =0;
         int right = n-1;
         while(left<right){
-            sum= numbers[left]+numbers[right];
-            if(sum== target){
+            sum = numbers[left] +numbers[right];
+            if(sum == target){
                 return new int[]{left+1,right+1};
-            }
-            else if(sum<target){
+            }else if(sum <target){
                 left++;
-            }
-            else{
-                right--;
-            }
-            
+            } 
+            else right--;
         }
-        return new int[]{-1, -1};
-       
-        
+        return new int[]{-1,-1};
     }
 }
